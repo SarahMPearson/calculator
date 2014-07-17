@@ -57,4 +57,16 @@ for(var i = 0; i < a1.length; i++){
 mean = parseFloat(mean / a1.length);
 return mean;
 };
+
+Calc.stdev = function(s1){
+var stdev = 0;
+var x = 0;
+var mean1 = Calc.mean(s1); // calculating the average of the array
+for(var i = 0; i <s1.length; i++){  //looping through the array
+x += Math.pow((s1[i]-mean1),2); //s1[i] is taking individual # from the array and finding the diff. from the mean and then squaring that difference and making a sumation of all those numbers
+}
+stdev = Math.sqrt((x/s1.length));  
+stdev = stdev.toFixed(2);
+return stdev;
+};
 module.exports = Calc;

@@ -50,4 +50,13 @@ describe('Calc', function(){
 
     });
   });
+  
+  describe('.stdev', function() {
+    it('should calculate the standard deviation of multiple #s', function(){
+      var stdev = Calc.stdev([600, 470, 170, 430, 300]);
+      
+      expect(stdev).to.be.closeTo(147, 0.4);
+
+    });
+  });
 });
