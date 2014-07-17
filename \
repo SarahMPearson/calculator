@@ -1,0 +1,21 @@
+{
+  "name": "calculator",
+  "version": "0.0.0",
+  "description": "a simple calculator build using TDD",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "mocha test --recursive -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SarahMPearson/calculator"
+  },
+  "author": "Sarah M. Pearson <sarahp@me.com>",
+  "contributors":  ["David Shoup"],
+  
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SarahMPearson/calculator/issues"
+  },
+  "homepage": "https://github.com/SarahMPearson/calculator"
+}
